@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>login page</title>
+	<style>
+		body {
+			background-color: dimgray;
+			padding: 15%;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		.login {
+			background-color: whitesmoke;
+			padding: 10%;
+		}
+		.press {
+			background-color: green; 
+			color:white; 
+			float:center; 
+		}
+		h1 {
+			text-align: center;
+			/*overflow: hidden;*/
+			/*margin: 10%;*/
+			position: relative;
+			max-width: 100%;
+			font-size: 30px;
+		}
+		
+		h1:before {
+			content: "";
+			/*margin-left: 10px;*/
+			display: block;
+			width: 39%;
+			height: 1px;
+			background: #000;
+			left: 0;
+			top: 50%;
+			position: absolute;
+
+		}
+		h1:after {
+			content: "";
+			/*margin-right: 10px;*/
+			display: block;
+			width: 39%;
+			height: 1px;
+			background: #000;
+			right: 0;
+			top: 50%;
+			position: absolute;
+		}
+		.message {
+			text-align: center;
+		}
+		.signin {
+			text-align: center;
+			color: white;
+		}
+		.new {
+			color: hsl(0, 0%, 100%);
+		}
+		.read {
+			color: rgb(75, 156, 75);
+		}
+		.button {
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<form class="login" action="submit.html" method="GET">
+		<br>
+		<div>
+			<!--<div style="display: inline-table;"><hr style="width: 10%;"></div>-->
+			<h1>Register</h1>
+			<!--<div style="display: inline-table;"><strike><p style="color: transparent;">some dummy text to be striken</p></strike></div>-->
+		</div>
+		<p class="message">create your account. It's the are verify having a matricule.</p><br>
+		<div>
+			<div>
+				<input style="float:left" type="text" size="30%" name="name" placeholder="First Name" required>
+			</div>
+			<div>
+				<input style="float:right" type="text" size="30%" name="name" placeholder="Last Name" required>
+			</div>
+		</div> <br><br>
+		<div>
+			<input type="email" size="87%" name="name" placeholder="Email" required>
+		</div><br>
+		<div>
+			<input type="password" size="87%" name="password" placeholder="Password" required>
+		</div><br>
+		<div>
+			<input type="password" size="87%" name="password" placeholder="congirm password" required>
+		</div><br>
+		<div>
+			<input type="checkbox" id="check1" size="136.5" name="check1" value="checked">
+			<label for="check1">I accept the <a class="read" href="">terms and cond.</a> and <a class="read" href="">privacy policy.</a></label>
+		</div><br>
+		<div class="button">
+			<button class="press" type="reset" style="width: 100%; border-width: 1px; border-radius: 5px;">Register Now</button>
+		</div>
+	</form>
+	<h3 class="signin"><b>already have an account? <a class="new" href="">sign in.</a></b></h3>
+</body>
+</html>
